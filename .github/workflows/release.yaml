@@ -118,9 +118,9 @@ jobs:
       #    password: ${{ secrets.PYPI_API_TOKEN }}
       #    packages-dir: dist/
 
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@de2c0eb89ae2a093876385947365aca7b0e5f844
-        with:
-          tag_name: ${{ inputs.release-version }}
-          body: ${{steps.github_release.outputs.changelog}}
+      #- name: Create GitHub Release
+      #  uses: softprops/action-gh-release@de2c0eb89ae2a093876385947365aca7b0e5f844
+      #  with:
+      #    tag_name: ${{ inputs.release-version }}
+      #    body: ${{steps.github_release.outputs.changelog}}
 
